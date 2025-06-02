@@ -31,7 +31,7 @@ header {
 }
 
 main {
-    height: 400vh;
+    height: auto;
 }
 
 h1 {
@@ -145,13 +145,17 @@ h1 {
     align-items: flex-start;
 }
 
+.hobbies {
+    margin-top: 10px;
+}
+
 #intro {
     height: 97vh;
     width: auto;
     display: flex;
 }
 
-#about {
+#about, #projects {
     height: 100vh;
     width: auto;
 }
