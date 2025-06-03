@@ -16,18 +16,18 @@ body {
     background-color: rgb(20, 74, 98);
     color: white;
     max-width: 900px;
-    margin: auto;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    height: 3vh;
-    width: auto;
-    padding: 16px;
     position: sticky;
     top: 0px;
     background-color: rgb(20, 74, 98);
+}
+
+nav, .nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 main {
