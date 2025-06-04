@@ -13,72 +13,156 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-color: rgb(20, 74, 98);
-    color: white;
-    max-width: 900px;
+    background-color: #000000;
+    color: #ffffff;
+    max-width: 1280px;
+    margin: auto;
 }
 
 header {
     position: sticky;
     top: 0px;
-    background-color: rgb(20, 74, 98);
+    background-color: #000000;
 }
 
-nav, .nav-list {
+nav, .nav-ul {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 main {
     height: auto;
+    font-size: 1.5rem;
 }
 
-h1 {
-    font-size: 4.5rem;
+.p {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
 }
 
 .logo {
-    height: 29px;
+    height: 32px;
     margin-right: auto;
+    margin-left: 5px;
 }
 
-.nav-list {
-    display: flex;
+.nav-ul {
     list-style-type: none;
 }
 
 .nav-link {  
     text-decoration: none;
-    color: antiquewhite;
+    color: #ffffff;
 }
 
-.nav-link, button {
-    padding: 5px 10px 5px 10px;
-    margin-left: 10px;
-    border-radius: 10px;
-    font-size: 1.2rem;
+.nav-link, .nav-button {
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
 }
 
-.nav-link:hover, button:hover {
-    background-color: antiquewhite;
-    color: rgb(20, 74, 98);
+.contact{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.contact:hover {
+    background-color: goldenrod;
+    color: #ffffff;
 }
 
 .container {
-    padding: 0px 50px 0px 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.profile {
+    width: 368px;
+    height: 368px;
+    border-radius: 100%;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dev-intro, .dev-img {
-    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2.0rem;
 }
 
-.squidward-icon {
-    width: 263.75px;
-    height: 375px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: azure;
+.img-fluid {
+    max-width: 100%;
+}
+
+.sample-img1 {
+    height: 30dvh;
+    border-radius: 1vh;
+}
+
+.about-content-1 {
+    display: flex;
+    align-items: center;
+}
+
+.title-line {
+    background-color: goldenrod;
+    border: unset;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    padding-top: 70px;
+    font-size: 2.0rem;
+}
+
+.container-tb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.learn-more {
+    margin-left: 15px;
+}
+
+.link {
+    color: rgb(60, 122, 255);
+}
+
+.bg-gray {
+    background-color: #999999;
+}
+
+.bg-gold {
+    background-color: goldenrod;
+}
+
+.project {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 1dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forward-icon {
+    width: auto;
+    height: 52px;
+    display: flex;
+    align-items: center;
 }
 
 .text-muted {
@@ -89,143 +173,15 @@ h1 {
     color: goldenrod;
 }
 
-.sub-title {
-    font-size: 1.5rem;
-}
-
-.text-align-center {
-    text-align: center;
-}
-
-.about-title {
-    font-size: 2.5rem;
-}
-
-.about-banner {
-    padding-top: 60px;
-}
-
-.title-line {
-    width: 70px;
-    height: 3px;
-    margin: auto;
-    background-color: goldenrod;
-    border-radius: 10px;
-}
-
-.about-content, .about-content-2 {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.my-img {
-    max-width: 100%;
-    flex: 50%;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.about-paragraph, .about-paragraph-2 {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex: 50%;
-}
-
-.about-paragraph {
-    text-align: left;
-    align-items: flex-end;
-}
-
-.about-paragraph-2 {
-    text-align: right;
-    align-items: flex-start;
-}
-
-.hobbies {
-    margin-top: 10%;
-}
-
 #intro {
     height: 97vh;
-    width: auto;
-    display: flex;
+    align-content: center;
 }
 
 #about, #projects {
     height: 100vh;
     width: auto;
 }
-
-@media only screen and (min-width: 600px) {
-    .container {
-        padding: 0px 128px 0px 128px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .squidward-icon, .logo  {
-        display: none;
-    }
-    
-    .nav-link, button {
-        font-size: 1.1rem;
-        padding: 5px 5px 5px 5px;
-    }
-    
-    .about-content, .about-content-2 {
-        display: block;
-        padding: 7px;
-    }
-
-    .about-paragraph, .about-paragraph-2 {
-        text-align: center;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    .my-img {
-        flex: 100%;
-    }
-
-    #about {
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 880px) {
-    .about-content, .about-content-2 {
-        display: flex;
-        flex-direction: column;
-        padding: 7px;
-    }
-
-    .about-paragraph, .about-paragraph-2 {
-        text-align: center;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    .my-img {
-        flex: 100%;
-    }
-
-    #about {
-        height: auto;
-    }
-      
-}
-
 
 
 
