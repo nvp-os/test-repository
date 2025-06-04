@@ -210,7 +210,10 @@ footer {
 }
 
 @media only screen and (max-width: 1032px) {
-    #intro, #about, #projects {
+    #intro {
+        height: 70vh;
+    }    
+    #about, #projects {
         height: auto;
     }
     
@@ -245,12 +248,13 @@ footer {
     }
 
     .profile {
-        position: absolute;
+        position: fixed;
         top: 170px;
         left: 150px;
         width: 60dvh;
         height: 60dvh;
         z-index: -1;
+        opacity: 0.7;
     }
 
     .dev-intro {
