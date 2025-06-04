@@ -206,11 +206,6 @@ footer {
     align-content: center;
 }
 
-#about, #projects {
-    height: 100vh;
-    width: auto;
-}
-
 @media only screen and (max-width: 1032px) {
     #intro {
         height: 70vh;
