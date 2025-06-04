@@ -29,7 +29,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px 5px 10px 5px;
 }
 
 main {
@@ -240,12 +240,13 @@ footer {
 }
 
 @media only screen and (max-width: 490px) {
-    nav {
-        justify-content: flex-start;
+    .nav-link, .nav-button {
+        padding: 7px;
+        border-radius: 7px;
     }
     
     .logo {
-        display: none;
+        border-radius: 100%;
     }
 
     .container {

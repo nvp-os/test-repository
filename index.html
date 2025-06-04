@@ -65,15 +65,18 @@
     </footer>
     <script>
       function updateImageBasedOnScreenWidth() {
-        const img = document.querySelector('.profile');  // This will select the first element with class "profile"
+        const img = document.querySelector('.profile');
+        const img2 = document.querySelector('.logo');
         const mediaQuery = window.matchMedia('(min-width: 490px)');
 
         if (mediaQuery.matches) {
           // Screen is less than or equal to 490px
           img.src = 'images/chomp.jpeg';
+          img2.src = 'images/logo.png';
         } else {
           // Screen is larger than 490px
           img.src = 'images/aurora-borealis.png';
+          img2.src = 'images/chomp.jpeg';
         }
       }
 
