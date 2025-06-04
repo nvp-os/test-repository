@@ -36,6 +36,10 @@ main {
     font-size: 1.5rem;
 }
 
+footer {
+    height: 10vh;
+}
+
 .p {
     padding-left: 15px;
     padding-right: 15px;
@@ -64,7 +68,7 @@ main {
     border-radius: 3px;
 }
 
-.contact{
+.social{
     background-color: #ffffff;
     color: #000000;
 }
@@ -74,7 +78,7 @@ main {
     color: #000000;
 }
 
-.contact:hover {
+.social:hover {
     background-color: goldenrod;
     color: #ffffff;
 }
@@ -165,6 +169,28 @@ main {
     align-items: center;
 }
 
+.copyright {
+    font-size: 1.2rem;
+}
+
+.social-icon {
+    height: 50px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.footer-section {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1 {
+    font-size: 1.7rem;
+}
+
 .text-muted {
     color: rgb(192, 192, 192)
 }
@@ -183,5 +209,68 @@ main {
     width: auto;
 }
 
+@media only screen and (max-width: 1032px) {
+    #intro, #about, #projects {
+        height: auto;
+    }
+    
+    #about, .about-content-1 {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .learn-more {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    nav {
+        justify-content: center;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .profile {
+        position: absolute;
+        top: 170px;
+        left: 150px;
+        width: 60dvh;
+        height: 60dvh;
+        z-index: -1;
+    }
+
+    .dev-intro {
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .sample-img1 {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #intro {
+        height: 100dvh;
+    }
+
+}
 
