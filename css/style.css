@@ -25,10 +25,10 @@ header {
     background-color: #000000;
 }
 
-nav, .nav-ul {
+nav {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 main {
@@ -54,6 +54,7 @@ footer {
 
 .nav-ul {
     list-style-type: none;
+    display: flex;
 }
 
 .nav-link {  
@@ -239,7 +240,7 @@ footer {
 
 @media only screen and (max-width: 490px) {
     nav {
-        justify-content: space-around;
+        justify-content: flex-start;
     }
     
     .logo {
