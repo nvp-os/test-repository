@@ -14,7 +14,7 @@
           <li class="nav-list"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-list"><a class="nav-link social" href="#">Social</a></li>
+          <li class="nav-list"><a class="nav-link social" href="social.html" target="_self">Social</a></li>
         </ul>
       </nav>
     </header>
@@ -63,5 +63,25 @@
         <h1 class="copyright">&copy All Rights Reserved. Neilan Padilla 2025.</h1>
       </div>     
     </footer>
+    <script>
+      function updateImageBasedOnScreenWidth() {
+        const img = document.querySelector('.profile');  // This will select the first element with class "profile"
+        const mediaQuery = window.matchMedia('(min-width: 490px)');
+
+        if (mediaQuery.matches) {
+          // Screen is less than or equal to 490px
+          img.src = 'images/chomp.jpeg';
+        } else {
+          // Screen is larger than 490px
+          img.src = 'images/aurora-borealis.png';
+        }
+      }
+
+      // Run on page load
+      updateImageBasedOnScreenWidth();
+
+      // Optionally, run again on resize
+      window.addEventListener('resize', updateImageBasedOnScreenWidth);
+    </script>
   </body>
 </html>

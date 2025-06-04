@@ -213,8 +213,12 @@ footer {
     #intro {
         height: 70vh;
     }    
-    #about, #projects {
+    #about {
         height: auto;
+    }
+
+    #projects {
+        height: 80dvh;;
     }
     
     #about, .about-content-1 {
@@ -235,7 +239,7 @@ footer {
 
 @media only screen and (max-width: 490px) {
     nav {
-        justify-content: center;
+        justify-content: space-around;
     }
     
     .logo {
@@ -249,17 +253,18 @@ footer {
 
     .profile {
         position: fixed;
-        top: 170px;
-        left: 150px;
+        top: 70px;
+        left: 100px;
         width: 60dvh;
         height: 60dvh;
         z-index: -1;
         opacity: 0.7;
+        border-radius: 0%;
     }
 
     .dev-intro {
         position: absolute;
-        bottom: 70px;
+        bottom: 190px;
     }
 
     .sample-img1 {
