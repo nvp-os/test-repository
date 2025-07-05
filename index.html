@@ -4,76 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neilan</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-v2.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <img class="logo" src="images/logo.png" alt="neilan logo">
-        <ul class="nav-ul">
-          <li class="nav-list"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-list"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-list"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-list"><a class="nav-link social" href="social.html" target="_self">Social</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main  class="container">
-      <section id="intro">
-        <div class="intro-content">
-          <div class="dev-intro">
-            <h1>Hi,<span class="text-gold"> I'm Neilan</span></h1>
-            <p class="sub-title">A Web Developer</p>
-          </div>
-          <div class="dev-img">
-            <img class="profile" src="images/chomp.jpeg" alt="Creepy smiling artwork">
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <div class="heading">
-          <hr class="title-line">
-          <h1 class="section-title">🌟 About</h1>
-        </div>
-        <div class="about-content-1 container-tb">
-          <img class="sample-img1" src="images/sample.png" alt="HHHHHHHHH">
-          <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quisquam quidem sed ratione ipsam sapiente tempora ipsum architecto perferendis voluptatem mollitia et non sint id inventore voluptate illo dolore quis! Lorem ipsum dolor sit amet consectetur</p>
-        </div>
-        <div class="about-content-1 container-tb">
-          <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quisquam quidem sed ratione ipsam sapiente tempora ipsum architecto perferendis voluptatem mollitia et non sint id inventore voluptate illo dolore quis! Lorem ipsum dolor sit amet consectetur</p>
-          <img class="sample-img1" src="images/sample.png" alt="HHHHHHHHH">
-        </div>
-        <a class="learn-more link" href="">Learn More</a>
-      </section>
-      <section id="projects">
-        <div class="heading">
-          <hr class="title-line">
-          <h1 class="section-title">🖥️ Projects</h1>
-        </div>
-        <h1 class="h1 project bg-gray container-tb">Project 1<a class="link" href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></h1>
-        <h1 class="h1 project bg-gold container-tb">Project 2<a class="link" href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></h1>
-        <h1 class="h1 project bg-gray container-tb">Project 3<a class="link" href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></h1>
-        <h1 class="h1 project bg-gold container-tb">Project 4<a class="link" href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></h1>
-        <h1 class="h1 project bg-gray container-tb">Project 5<a class="link" href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></h1>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-section">
-        <a href="https://github.com/nvp-os"><img class="social-icon" src="images/github-icon.svg" alt="github icon"></a>
-        <h1 class="copyright">&copy All Rights Reserved. Neilan Padilla 2025.</h1>
-      </div>     
-    </footer>
+    <div class="wrapper">
+      <header class="padding-10px">
+        <nav>
+          <img class="logo" src="images/logo.png" alt="neilan logo">
+          <ul class="nav-link">
+            <li><a class="primary-button" href="index.html">Home</a></li>
+            <li><a class="primary-button" href="#about">About</a></li>
+            <li><a class="primary-button" href="#projects">Projects</a></li>
+            <li><a class="secondary-button" href="social.html" target="_self">Social</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <main>
+          <section id="introduction" class="padding-20px vh-100">
+            <div class="intro-center">
+              <div class="developer-intro padding-lr">
+                <h1>Hi,<span class="text-gold"> I'm Neilan</span></h1>
+                <p>A Web Developer</p>
+              </div>
+              <img class="profile padding-lr" src="images/chomp.jpeg" alt="Creepy smiling artwork">
+            </div>
+          </section>
+          <section id="about" class="padding-20px">
+            <div class="padding-title">
+              <hr class="section-line">
+              <h1 class="section-title">🌟 About</h1>
+            </div>
+            <div class="center">
+              <div class="yap-1">
+                <img class="yap-image" src="images/sample.png" alt="White image">
+                <div class="yap-shadow">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quisquam quidem sed ratione ipsam sapiente tempora ipsum architecto perferendis voluptatem mollitia et non sint id inventore voluptate illo dolore quis! Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </div>
+              <div class="yap-2">
+                <div class="yap-shadow">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quisquam quidem sed ratione ipsam sapiente tempora ipsum architecto perferendis voluptatem mollitia et non sint id inventore voluptate illo dolore quis! Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+                <img class="yap-image" src="images/sample.png" alt="White image">
+              </div>
+            </div> 
+            <a href="">Learn More</a>
+          </section>
+          <section id="projects" class="padding-20px">
+            <div class="padding-title">
+              <hr class="section-line">
+              <h1 class="section-title">🖥️ Projects</h1>
+            </div>
+            <div class="projects margin-tb padding-10px bg-gold">Project 1<a href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></div>
+            <div class="projects margin-tb padding-10px bg-gray">Project 2<a href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></div>
+            <div class="projects margin-tb padding-10px bg-gold">Project 3<a href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></div>
+            <div class="projects margin-tb padding-10px bg-gray">Project 4<a href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></div>
+            <div class="projects margin-tb padding-10px bg-gold">Project 5<a href=""><img class="forward-icon" src="images/arrow.png" alt="Arrow right png image"></a></div>
+          </section>
+        </main>
+        <footer class="padding-20px">
+          <div class="footer-section">
+            <a href="https://github.com/nvp-os"><img  class="github-icon" src="images/github-icon.svg" alt="github icon"></a>
+            <h1 class="copyright">&copy All Rights Reserved. Neilan Padilla 2025.</h1>
+          </div>     
+        </footer>
+      </div>
+    </div>
     <script>
-      function updateImageBasedOnScreenWidth() {
+      function updateImageBasedOnScreenWidth() 
+      {
         const img = document.querySelector('.profile');
         const img2 = document.querySelector('.logo');
         const mediaQuery = window.matchMedia('(min-width: 490px)');
 
-        if (mediaQuery.matches) {
+        if(mediaQuery.matches) 
+        {
           // Screen is less than or equal to 490px
           img.src = 'images/chomp.jpeg';
           img2.src = 'images/logo.png';
-        } else {
+        } 
+        else 
+        {
           // Screen is larger than 490px
           img.src = 'images/aurora-borealis.png';
           img2.src = 'images/chomp.jpeg';

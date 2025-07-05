@@ -6,6 +6,7 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -38,7 +39,11 @@ main {
 }
 
 footer {
-    height: 10vh;
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
 }
 
 .p {
@@ -215,7 +220,7 @@ footer {
     }
 
     #projects {
-        height: 80dvh;;
+        height: auto;
     }
     
     #about, .about-content-1 {
