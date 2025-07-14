@@ -145,7 +145,7 @@ nav {
 }
 
 .developer-intro {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .max-width {
@@ -172,6 +172,7 @@ nav {
 .yap-1, .yap-2  {
     display: flex;
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .yap-image {
@@ -189,7 +190,7 @@ nav {
 
 .section-title {
     margin: 10px 5px;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .padding-title {
@@ -226,15 +227,19 @@ nav {
     font-size: 1.3rem;
 }
 
+.center-1 {
+    margin: 0 auto;
+}
+
 #introduction {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@media only screen and (max-width: 870px) {
-    .container {
-        margin: 10px;
+@media only screen and (max-height: 700px) {
+    * {
+        height: auto;
     }
 
     .yap-1, .yap-2 {
@@ -248,17 +253,19 @@ nav {
         flex-direction: column;
         text-align: center;
     }
+
+    .developer-intro {
+        font-size: 1.5rem;
+    }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .container {
         margin: 10px;
     }
 
     .yap-1, .yap-2 {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .footer-section a {

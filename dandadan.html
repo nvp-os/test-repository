@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandadan</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+      
+      * {
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: auto;
+      }
+
+      body {
+        font-family: "Tektur", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+        background-image: linear-gradient(#ae670e, #d59a0b);
+        background-repeat: no-repeat;
+        font-size: 1.25rem;
+      }
+
+      header {
+        padding: 10px;
+        position: fixed;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      nav li {
+        margin: 0px 5px;
+      }
+
+      nav a {
+        text-decoration: none;
+        padding: 5px;
+        color: aliceblue;
+      }
+
+      nav a:hover {
+        text-decoration: underline rgb(255, 31, 31) 2px;
+        
+      }
+
+      .title-about {
+        font-size: 180px;
+        padding-top: 10%;
+        font-size: 72px;
+        background: -webkit-linear-gradient(#e52424, #890608);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .h1 {
+        font-size: 2.25rem;
+      }
+
+      .h2 {
+        font-size: 1.75rem;
+      }
+
+      .h3 {
+        font-size: 1.5em;
+      }
+
+      .h4 {
+        font-size: 1.25em;
+      }
+
+      .logo {
+        margin-right: 10px;
+        height: 32px;
+      }
+
+      .banner-img {
+        height: auto;
+        max-width: 100%;
+      }
+
+      .banner {
+        height: 100dvh;
+        background-image: url(images/dandadan-banner.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      #about {
+        height: 100dvh;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .title-about {
+          font-size: 4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo" src="images/dandadan-logo.png" alt="Dandadan logo">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Watch</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        
+      </section>
+      <section class="wrapper container" id="about">
+        <h1 class="title-about">About</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, eaque quia est aliquid corrupti minus nihil error ut quisquam rem ducimus quasi hic, laudantium atque neque iure earum, harum soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe nesciunt sequi quis obcaecati blanditiis, amet cum doloremque provident consequuntur laudantium dolor adipisci possimus, dolorum, iusto consectetur nostrum natus enim?</p>
+      </section>
+    </main>
+  </body>
+</html>
