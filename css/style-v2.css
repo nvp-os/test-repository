@@ -259,13 +259,14 @@ nav {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
     .container {
         margin: 10px;
     }
 
     .yap-1, .yap-2 {
         display: flex;
+        flex-direction: column;
     }
 
     .footer-section a {
