@@ -25,6 +25,7 @@
           "wdth" 100;
         background-image: linear-gradient(#ae670e, #d59a0b);
         background-repeat: no-repeat;
+        background-position: center;
         font-size: 1.25rem;
       }
 
@@ -62,14 +63,6 @@
         
       }
 
-      .title-about {
-        font-size: 180px;
-        padding-top: 10%;
-        background: -webkit-linear-gradient(#e52424, #890608);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
       .h1 {
         font-size: 2.25rem;
       }
@@ -105,6 +98,28 @@
         border-bottom: #890608 solid 2px;
       }
 
+      .title-about, .title-characters {
+        padding-top: 10%;
+        font-size: 10rem;
+        background: -webkit-linear-gradient(#e52424, #890608);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .okarun, .momo {
+        max-width: 600px;
+      }
+      
+      .character-name {}
+
+      .character-img {
+        width: 360px;
+        display: block;
+        margin: auto;
+      }
+
+      .character-description {}
+
       .wrapper {
         max-width: 900px;
         margin: 0 auto;
@@ -114,13 +129,36 @@
         padding: 20px;
       }
 
+      .rw-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      .pd-10 {
+        padding: 10px;
+      }
+
       #about {
         height: 100dvh;
       }
 
+      #characters {
+        height: auto;
+        text-align: center;
+      } 
+
       @media only screen and (max-width: 600px) {
         .title-about {
           font-size: 4rem;
+        }
+
+        .title-characters {
+          font-size: 3.5rem;
+        }
+
+        .rw-2 {
+          flex-direction: column;
         }
       }
     </style>
@@ -133,19 +171,36 @@
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="">Characters</a></li>
+            <li><a href="#characters">Characters</a></li>
             <li><a href="">Watch</a></li>
           </ul>
         </marquee>
       </nav>
     </header>
-    <main>
-      <section class="banner">
+    <section class="banner">
         
-      </section>
-      <section class="wrapper container" id="about">
-        <h1 class="title-about">About</h1>
-        <p>Dandadan (ダンダダン), also written as Dan Da Dan, is a Japanese manga series written and illustrated by Yukinobu Tatsu. It has been serialized in Shueisha's Shōnen Jump+ app and website since April 2021, with its chapters collected in 20 tankōbon volumes as of July 2025. The series follows two teenagers with supernatural powers fighting yōkai and aliens with help from multiple allies. </p>
+    </section>
+    <main>
+      <div  class="wrapper container">
+        <section id="about">
+          <h1 class="title-about">About</h1>
+          <p>Dandadan (ダンダダン), also written as Dan Da Dan, is a Japanese manga series written and illustrated by Yukinobu Tatsu. It has been serialized in Shueisha's Shōnen Jump+ app and website since April 2021, with its chapters collected in 20 tankōbon volumes as of July 2025. The series follows two teenagers with supernatural powers fighting yōkai and aliens with help from multiple allies.</p>
+        </section>
+      </div>
+      <section id="characters">
+        <h1 class="wrapper container title-characters">Characters</h1>
+        <div class="rw-2 pd-10">
+          <div class="okarun">
+            <h2 class="character-name">Takakura Ken (Okarun)</h2>
+            <img class="character-img" src="images/okarun.png" alt="Whole body image of ken takakura">
+            <p class="character-description">Okarun (real name Ken Takakura) is a shy, nerdy high schooler obsessed with the supernatural. Nicknamed by his crush Momo and her friends, he gains demonic powers after being possessed by the Turbo Granny, granting him super speed and a smooth-talking alter ego. Often bullied, he slowly finds confidence and friendship—especially with Momo, whom he eventually falls in love with. His bizarre journey frequently centers around the loss and recovery of his testicles, making for a wild mix of comedy, action, and heartfelt growth.</p>
+          </div>
+          <div class="momo">
+            <h2 class="character-name">Ayase Momo</h2>
+            <img class="character-img" src="images/momo.png" alt="Whole body image of momo">
+            <p class="character-description">Momo Ayase is a bold and spirited gyaru high schooler who believes in ghosts thanks to her grandmother Seiko’s influence—though their bond was strained after Momo rejected the supernatural to avoid bullying. After being abducted by aliens, Momo awakens powerful psychokinetic abilities, using giant spectral hands to manipulate auras. Despite clashing with the nerdy Okarun at first, their shared battles bring them closer, and she grows to deeply care for him. With a secret crush on the actor Ken Takakura (awkwardly mirrored in Okarun’s name), Momo fights to help recover his stolen testicles—hoping to heal both him and her own family ties along the way.</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
