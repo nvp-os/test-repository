@@ -240,10 +240,6 @@ nav {
     justify-content: center;
 }
 
-@media only screen and (min-width: 1280px) {
-    
-}
-
 @media only screen and (max-height: 700px) {
     * {
         height: auto;
@@ -256,6 +252,12 @@ nav {
 
     .developer-intro {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-section {
+        flex-direction: column;
     }
 }
 
