@@ -19,6 +19,10 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    background-image: url(tile-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
@@ -310,9 +314,7 @@ nav {
     }
 
     .profile {
-        border-radius: 0%;
-        position: fixed;
-        z-index: -1;
+        display: none;
     }
 
     .padding-20px {

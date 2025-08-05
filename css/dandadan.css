@@ -128,6 +128,10 @@ nav a:hover {
   justify-content: space-evenly;
 }
 
+.grid {
+  grid-template-columns: auto;
+}
+
 .pd-10 {
   padding: 10px;
 }
